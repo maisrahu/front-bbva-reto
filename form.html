@@ -1,7 +1,6 @@
 
 
 
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -194,6 +193,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<img src="https://www.bbva.pe/content/dam/public-web/peru/ab-test/ico-estrella-ab.png"> Descubre el mejor producto para tí
 					</div>
 				</div>
+
+<form action="/add_contact" method="POST">
+
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 hst-form mdl-shadow--2dp formulario-inicial">
 <!-- 					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12 hst-form mdl-shadow--2dp formulario-inicial"> -->
@@ -203,7 +205,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<!-- Select with arrow-->
 									
 										<div id="select-tipo-documento" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height hst-select-mod is-focused">
-											<input class="mdl-textfield__input" type="text" id="tipoDoc" value="DNI" data-val="DNI" tabIndex="0" readonly> <label for="tipoDoc" class="mdl-textfield__label">Tipo documento</label>
+											<input class="mdl-textfield__input" type="text" id="tipoDoc" value="DNI" data-val="DNI" tabIndex="0"  readonly> <label for="tipoDoc" class="mdl-textfield__label">Tipo documento</label>
 											<label for="tipoDoc" style="float:right;" >
 								                <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
 								            </label>
@@ -224,20 +226,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									
 										<div id="inputNumDocDni" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 											<div class="mdl-textfield-validation">
-												<input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" onchange="encenderValidacionDocumentoDNI();" id="numDocDni"> 
+												<input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" onchange="encenderValidacionDocumentoDNI();" id="numDocDni" name="fullname"> 
 												<img id="checkDni" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
 											</div>
-											<label class="mdl-textfield__label" for="numDocDni">Documento</label>
+											<label class="mdl-textfield__label"  for="numDocDni">Documento</label>
 											<span class="mdl-textfield__error">Ingresar un documento v&aacute;lido.</span>
 										</div>
 									
 								</div>
+
+
+
+
+
+
+
+
 								<div class="col-md-6 col-sm-6">
 									<!-- Numeric Textfield with Floating Label -->
 									
 										<div id="inputNumDocOtro" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label hidden">
 											<div class="mdl-textfield-validation">
-												<input class="mdl-textfield__input" type="text" onchange="encenderValidacionDocumento();" id="numDocOtro">
+												<input class="mdl-textfield__input" type="text" onchange="encenderValidacionDocumento();" id="numDocOtro" >
 												<img id="checkDoc" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
 											</div>
 											<label class="mdl-textfield__label" for="numDocOtro">Documento</label> 
@@ -246,28 +256,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									
 								</div>
 								<div class="col-md-12 col-sm-12"></div>
-								<div class="col-md-6 col-sm-6">
-									<!-- Textfield with Floating Label -->
+								
+							
+								<div class="col-md-6 col-sm-6 content-spin-load-document">
+									<img class="spin-load-document hidden" src="patpubST/own/img/ajaxload.gif">
+									<!-- Numeric Textfield with Floating Label -->
 									
-										<div id="inputCelOblig" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<div id="inputNumDocDni" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 											<div class="mdl-textfield-validation">
-												<input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" onchange="encenderValidacionCelular();" id="celularObligatorio">
-												<img id="checkCel" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
+												<input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" onchange="encenderValidacionDocumentoDNI();" id="numDocDni" name="edad"> 
+												<img id="checkDni" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
 											</div>
-											<label class="mdl-textfield__label" for="celularObligatorio">Celular</label> <span class="mdl-textfield__error">Ingrese un celular v&aacute;lido.</span>
-										</div>
-									
-								</div>
-								<div class="correo-pld col-md-6 col-sm-6">
-									<!-- Textfield with Floating Label -->
-									
-										<div id="inputEmail" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-											
-											<div class="mdl-textfield-validation">
-												<input class="mdl-textfield__input" type="text" id="email" onchange="encenderValidacionEmail();" autocomplete="off" maxlength="34"> 
-												<img id="checkEmail" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
-											</div>
-											<label class="mdl-textfield__label" for="email">Correo electr&oacute;nico</label> <span class="mdl-textfield__error">Ingrese un correo electr&oacute;nico v&aacute;lido.</span>
+											<label class="mdl-textfield__label"  for="numDocDni">Edad</label>
+											<span class="mdl-textfield__error">Ingresar su edad v&aacute;lido.</span>
 										</div>
 									
 								</div>
@@ -432,6 +433,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<button id="empecemos" class="bt btn-BBVA-azul">
 										&iexcl;Empecemos&#33;
 									</button>
+									</form>
 								</div>
 							</div>
 							
