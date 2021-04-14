@@ -1,0 +1,563 @@
+.title--footer{
+		
+		font-size:20px;
+		font-family: "BentonSansBBVA Medium",Helvetica,Arial,sans-serif;
+		color: #626262;
+		font-weight: 400;
+	}
+	
+	#divFooter ul>li::before {
+		font-family: 'bbvaiconfont';
+		font-style: normal;
+		font-size: 16px;
+		font-weight: normal;
+		vertical-align: middle;
+		color: #1d73b2;
+		margin-right: 8px;
+		display: inline-block;
+		-webkit-transform: scaleY(2.5) rotate(180deg);
+		transform: scaleY(2.5) rotate(180deg);
+		margin-left: -24px;
+		content: "\ea09";
+		list-style: none;
+	}
+	
+	#divFooter li{
+		list-style: none!important;
+	}
+
+	#idMainHeader {
+		position: fixed;
+		z-index: 5;
+		background-color: #004481;
+		width: 100%;
+		height: 48px;
+	}
+
+	#divLogo {
+		display: block;
+		float: left;
+		width: auto;
+		margin: 0;
+		padding: 16px;
+		height: 48px;
+		box-sizing: border-box;
+	}
+
+	#divTextoSalir {
+		display: none;
+		margin-top: 3px;
+		margin-left: -3px;
+	}
+
+	#linkBbvaMain {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		outline: none;
+		position: relative;
+	}
+
+
+	#imagenLogo {
+		height: 20px;
+		width: auto;
+		will-change: height;
+		margin: 0 auto;
+		-webkit-transition: height .33333s;
+		transition: height .33333s;
+		max-width: none;
+		display: block;
+	}
+
+	#linkIconoSalir {
+		font-family: "BentonSansBBVA Medium", Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		text-align: left;
+		letter-spacing: 0;
+		color: #fff;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: none;
+		background: none;
+		padding: 0 16px;
+		line-height: 48px;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		height: 48px;
+	}
+
+	#iconSalir {
+		font-family: "BentonSansBBVA Medium", Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		width: 18px;
+	}
+
+	#divCabecera {
+		height: 48px;
+	}
+
+	@media ( min-width :992px) {
+		#idMainHeader {
+			height: 64px;
+			max-height: 64px;
+		}
+		#divLogo {
+			height: 64px;
+			max-height: 64px;
+		}
+		#divTextoSalir {
+			display: block;
+			font-size: 15px;
+		}
+		#imagenLogo {
+			height: 40px;
+			margin: 0;
+		}
+		#linkIconoSalir {
+			height: 64px;
+		}
+		#iconSalir {
+			font-size: 22px;
+			/* 	    margin: 0 12px; */
+		}
+		#divCabecera {
+			height: 64px;
+			max-height: 64px;
+		}
+	 	#divFooter{ 
+			width: 100%; 
+	 		z-index: 70000000000000000000000000000000000; 
+		} 
+	}
+
+	.footerComp, .footerComp div{
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.footerComp button{
+		-webkit-appearance: button;
+		-webkit-writing-mode: horizontal-tb !important;
+		text-rendering: auto;
+		color: buttontext;
+		letter-spacing: normal;
+		word-spacing: normal;
+		text-transform: none;
+		text-indent: 0px;
+		text-shadow: none;
+		display: inline-block;
+		text-align: center;
+		align-items: flex-start;
+		cursor: default;
+		background-color: buttonface;
+		box-sizing: border-box;
+		margin: 0em;
+		font: 400 13.3333px Arial;
+		padding: 1px 6px;
+		border-width: 2px;
+		border-style: outset;
+		border-color: buttonface;
+		border-image: initial;
+		cursor: pointer;
+		background-color: transparent;
+	}
+
+	.footerComp__background{
+		width: 100%;
+		background-color: #f4f4f4;
+		color: #121212;
+		padding: 40px 16px;
+	}
+
+	.footerComp__contenedor{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100vw;
+	}
+
+	.footerComp .split__cabecera{
+		font-family: "BentonSansBBVA Medium",Helvetica,Arial,sans-serif;
+		font-size: 22px;
+		color: #121212;
+		text-align: left;
+		letter-spacing: -.5px;
+		line-height: 32px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 16px 16px;
+		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		cursor: pointer;
+		border-width: 0;
+		border-bottom: 1px solid #626262;
+	}
+
+	.split__cabecera:focus{
+		outline: 0;
+		text-decoration: none;
+	}
+
+	.split__cabecera span{
+		display: inline-block;
+		width: calc(100% - 24px);
+	}
+
+	.split__texto-imagenes img{
+		width: 100%;
+	}
+
+	.split__icon{
+		font-size: 24px;
+		color: #1d73b2;
+		float: right;
+		margin-right: 0;
+		margin-left: 0;
+		width: 24px;
+	}
+
+	.split__cuerpo{
+		width: 100%;
+		-webkit-transition: max-height 400ms,min-height 400ms;
+		transition: max-height 400ms,min-height 400ms;
+		max-height: 0;
+		min-height: 0;
+		overflow: hidden;
+	}
+	
+	.split__cuerpo.split-open-default{
+		max-height: initial;
+	}
+
+	.split__cuerpo-envoltura{
+		display: block;
+		width: 100%;
+		position: relative;
+		zoom: 1;
+		padding: 0 16px;
+		margin-top: 48px;
+		/* margin-bottom: 48px; */
+		font-family: "BentonSansBBVA Book",Helvetica,Arial,sans-serif;
+		
+		color: #121212;
+		
+	}
+
+	.split__texto-imagenes{
+		letter-spacing: 0;
+		line-height: 20px;
+		font-size: 15px;
+		text-align: justify;
+		margin: 24px 0;
+	}
+
+	.split__texto-imagenes p{
+		font-family: "BentonSansBBVA Book",Helvetica,Arial,sans-serif;
+		font-size: 15px;
+		color: #626262;
+		letter-spacing: 0;
+		line-height: 20px;
+	}
+
+	.split__texto-imagenes ul li{
+		margin: 8px 0 8px 24px;
+		padding-left: 16px;
+		letter-spacing: 0;
+		line-height: 20px;
+		font-size: 15px;
+		text-align: left;
+	} 
+
+
+	.texto-bbva--500{
+		color: #626262;
+	}
+
+	.background--100{
+		background-color: #f4f4f4;
+	}
+
+	.footerComp__contenedor{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.split__subTitle_terms{
+		font-size: 22px !important;
+		line-height: 32px !important;
+		color: #121212 !important;
+		margin-top: 38px;
+		margin-bottom: 48px;
+	}
+
+	.split__text_letterSpacing{
+		letter-spacing: 0.0px;
+	}
+
+	.split__texto-beneficios{
+		font-size: 15px !important;
+	}
+
+	.split__margin-boton-top-16{
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+
+	.split__margin-top-16-none{
+		margin-top: 0px!important;
+	}
+
+	.split__text-gray{
+		font-size: 12px !important;
+	}
+
+	@media(min-width: 768px){
+
+		.split__texto-beneficios{
+			line-height: 24px !important;
+		}
+	}
+
+	@media(min-width: 900px){
+
+		.split__texto-beneficios{
+			line-height: 24px !important;
+		}
+		
+	}
+
+	@media(min-width: 992px){
+
+		.split__texto-beneficios{
+			line-height: 24px !important;
+		}
+
+		.footerComp__background{
+			padding: 72px;
+		}
+	}
+	
+
+
+
+/*.footerComp, .footerComp div{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.footerComp button{
+    -webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.footerComp__background{
+    width: 100%;
+    background-color: #f4f4f4;
+    color: #121212;
+    padding: 40px 16px;
+}
+
+
+
+.footerComp__contenedor{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100vw;
+}
+
+.footerComp .split__cabecera{
+    font-family: "BentonSansBBVA Medium",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    color: #121212;
+    text-align: left;
+    letter-spacing: -.5px;
+    line-height: 32px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 16px 16px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-width: 0;
+    border-bottom: 1px solid #626262;
+    
+}
+
+.split__cabecera:focus{
+    outline: 0;
+    text-decoration: none;
+}
+
+.split__cabecera span{
+    display: inline-block;
+    width: calc(100% - 24px);
+}
+
+.split__texto-imagenes img{
+    width: 100%;
+}
+
+.split__icon{
+    font-size: 24px;
+    color: #1d73b2;
+    float: right;
+    margin-right: 0;
+    margin-left: 0;
+    width: 24px;
+}
+
+.split__cuerpo{
+    width: 100%;
+    -webkit-transition: max-height 400ms,min-height 400ms;
+    transition: max-height 400ms,min-height 400ms;
+    max-height: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.split__cuerpo-envoltura{
+    display: block;
+    width: 100%;
+    position: relative;
+    zoom: 1;
+    padding: 0 16px;
+    font-family: "BentonSansBBVA Book",Helvetica,Arial,sans-serif;
+    
+    color: #121212;
+    
+}
+
+.split__texto-imagenes{
+    letter-spacing: 0;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: justify;
+    margin: 24px 0;
+}
+
+.split__texto-imagenes p{
+    font-family: "BentonSansBBVA Book",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #626262;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.split__texto-imagenes ul li{
+    margin: 8px 0 8px 24px;
+    padding-left: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: left;
+} 
+
+.split__texto-imagenes ul li::before{
+    font-family: 'bbva-icons!important'; 
+    content: '\E029';
+    font-family: bbva-icons!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-variant: normal!important;
+    text-transform: none!important;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    vertical-align: middle;
+    color: #1d73b2;
+    margin-right: 8px;
+    display: inline-block;
+    -webkit-transform: scaleY(2.5) rotate(180deg);
+    transform: scaleY(2.5) rotate(180deg);
+    margin-left: -24px;
+
+
+}
+
+.texto-bbva--500{
+    color: #626262;
+}
+
+.background--100{
+    background-color: #f4f4f4;
+}
+
+.footerComp__contenedor{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.split__margin-boton-top-16{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+@media(max-width: 550px){
+    .footerComp .split__cabecera{
+        font-size: 15px;
+    }
+}
+
+@media(min-width: 600px){
+    .split__icon{
+        margin-right: 40px;
+    }
+}
+
+@media(min-width: 900px){
+    .footerComp .split__cabecera{
+        color: #626262;
+    }
+}
+
+@media(min-width: 992px){
+    .footerComp__background{
+        padding: 72px;
+    }
+
+    .split__texto-beneficios{
+        line-height: 24px !important;
+    }
+}*/

@@ -1,0 +1,25 @@
+/*-- Importaciones de Fonts --*/
+@import url("bbva-icons/bbva-icons.css");
+@import url("bbva-coronita/fonts-coronita.css");
+@font-face{
+	font-family:"BBVAWebLight-Regular";
+	src:url(bbva/bbvaweb-light-eot.eot);
+	src:url(bbva/bbvaweb-light-eot.eot?#iefix) format("eot"),
+	    url(bbva/bbvaweb-light-woff.woff) format("woff"),
+	    url(bbva/bbvaweb-light-ttf.ttf) format("truetype"),
+	    url(bbva/bbvaweb-light-svg.svg#OfficeLight) format("svg");
+	font-weight:400;
+}
+
+@font-face{
+	font-family: "BBVAWebBook-Regular";
+	src:url(bbva/bbvaoffice-book.ttf),
+		url(bbva/bbvaoffice-bookitalic.ttf);
+	font-weight:400;
+}
+
+@font-face{
+	font-family:"Arial-MT";
+	src:url(arial/ArialMT-regular.ttf);
+	font-weight:400;
+}

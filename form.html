@@ -1,0 +1,565 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta id="metaviewport" name="viewport" content="width=device-width, initial-scale=1">
+		<title id="titleApp">Pr&eacute;stamo | BBVA</title>
+		<link id="linkCanonical" />
+		<script type="text/javascript">
+			var meta = document.createElement('meta');
+			var metaOne = document.createElement('meta');
+			var metaTwo = document.createElement('meta');
+			var metaThree = document.createElement('meta');
+			var titleApp = document.getElementById('titleApp');
+			var linkCanonical = document.getElementById('linkCanonical');
+
+			if (window.location.host === 'prestamos.bbva.pe') {
+				
+				metaOne.setAttribute('name', 'robots');
+				metaOne.setAttribute('content', 'follow,index');
+				
+				metaTwo.setAttribute('url', 'https://prestamos.bbva.pe');
+				metaTwo.setAttribute('content', 'follow,index');
+				
+				linkCanonical.setAttribute('rel', 'canonical');
+				linkCanonical.setAttribute('href', 'https://prestamos.bbva.pe');
+				
+				if (window.location.pathname === '/prestamos-personales') {
+					metaThree.setAttribute('name', 'description');
+					metaThree.setAttribute('content','Solicita tu préstamo personal online BBVA para comprar un auto, pagar tus estudios o disponer del efectivo en lo que desees. Ingresa tus datos aquí');
+					titleApp.innerHTML = 'Solicitar préstamo personal online | BBVA Perú';
+				} else if (window.location.pathname === '/credito-vehicular') {
+					metaThree.setAttribute('name', 'description');
+					metaThree.setAttribute('content','En BBVA solicita tu crédito vehicular para un auto nuevo, uno de segunda o una moto. Cumple tu sueño gracias a este préstamo vehicular y págalo en cuotas');
+					titleApp.innerHTML = 'Solicita tu crédito vehicular online | BBVA Perú';
+				} else if (window.location.pathname === '/credito-estudiantil') {
+					metaThree.setAttribute('name', 'description');
+					metaThree.setAttribute('content','Ingresa, llena los datos y en cuestión de segundos conoce si cuentas con un crédito estudiantil BBVA. Accede a este préstamo de estudios aquí.');
+					titleApp.innerHTML = 'Pide tu crédito estudiantil aquí | BBVA Perú';
+				}
+				document.head.insertBefore(metaOne,titleApp);
+				document.head.insertBefore(metaTwo,titleApp);
+				document.head.insertBefore(metaThree,titleApp);
+			}else {
+				meta.setAttribute('name', 'robots');
+				meta.setAttribute('content', 'nofollow,noindex');
+				document.head.insertBefore(meta,titleApp);
+				linkCanonical.remove();
+			}
+		</script>
+
+		
+		
+		
+		<link rel="icon" type="image/png" href="patpubST/own/img/favicon.ico">
+		<!-- Google Tag Manager -->
+<script async defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.defer=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PHPPLH');</script>
+<!-- End Google Tag Manager -->
+		
+
+
+<script>
+	//Funcion que se encarga de ejecutar la funcionalidad de prehiding y de setear la variable para launch
+	function prehiding(){
+	    window.isPagePrehiding = true;
+	    (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
+	}
+	prehiding();
+</script>
+
+
+<!-- Analitica -->
+
+	<script src="//assets.adobedtm.com/95c3e405673d/17e60bacda41/launch-4b120e7a142a.min.js" async></script>	
+
+
+<script type="text/javascript">
+	var amb_tag = "bbvaperuprod";
+</script>
+<!-- /Analitica -->
+
+
+<!-- Fonts Coronita -->
+	<link rel="stylesheet" type="text/css" href="patpubST/own/fonts/bbva-coronita/fonts-coronita.css">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="patpubST/libraries/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="patpubST/libraries/bootstrap/3.3.7/css/bootstrap-spacing.min.css">
+
+<link rel="stylesheet" type="text/css" href="patpubST/libraries/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+
+
+<!-- Material Design Lite -->
+<link rel="stylesheet" type="text/css" href="patpubST/libraries/material-design/lite/css/material.min.css">
+<link rel="stylesheet" type="text/css" href="patpubST/libraries/material-design/select-mdl/css/getmdl-select.min.css">
+
+
+<link href="patpubST/libraries/jquery/Select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+<!-- Own -->
+<link rel="stylesheet" type="text/css" href="patpubST/own/fonts/fonts.css">
+<link rel="stylesheet" type="text/css" href="patpubST/own/css/patpub.css">
+<link rel="stylesheet" type="text/css" href="patpubST/own/css/footer.css?d=1618413479369">
+
+<link rel="stylesheet" href="https://www.bbva.pe/etc/designs/bbva/pwebs/clientlibs/bbva.iconfonts.lc-20200129-124803-lc.min.css" type="text/css" media="all" onload="this.media='all'">
+
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script  type="text/javascript">
+	function resetUrl() {
+		//history.pushState(null, null, "/patpub");
+	}
+	/*-- GA --*/
+	/*-- FIN GA --*/
+</script>
+
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript">
+			var indicadorEntrada = 'PLD';
+			var perfil = '';
+			var errorInicial = '';
+		</script>
+
+	</head>
+	<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+	<body id="page-top" data-spy="scroll" onload="resetUrl()" oncopy="return false" onpaste="return false">
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHPPLH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<input type="hidden" id="idSesion" value="n1VF3j1g_57IY_vlTQGpvEq5pbfKerSWk2I5C_KzPHMY8KfboZjIpE-7DMQbx4pvVpuNjkpXJrn7HJVRsWXWdA" />
+		<input type="hidden" id="baseUrl" value="/patpub" />
+		<div id="idMainHeader" style="display: none">
+		<div id="divLogo">
+			<a id="linkBbvaMain" href="https://www.bbva.pe/" target="top"> 
+				<img id="imagenLogo" alt=""
+				src="https://www.bbva.pe/content/dam/public-web/global/images/logos/logo_bbva_blanco.svg"/>
+			</a>
+		</div>
+		<a id="linkIconoSalir" href="https://www.bbva.pe/"> <span
+			id="iconSalir" class="icono">x</span> <span id="divTextoSalir">
+				Salir </span>
+		</a>
+	</div>
+<div id="divCabecera" style="display: none"></div>
+<script type="text/javascript" src="patpubST/own/js/header.js?d=1618413479369"></script>	
+		<div class="wrap" id="seccion-00">
+			<div class="container-fluid mdl-shadow--2dp">
+				<!-- T&iacute;tulo de la p&aacute;gina -->
+				<input type="hidden" id="idPerfil" value="0">
+				<input type="hidden" id="idFlujo" value="0">
+				<input type="hidden" id="tracking" value="">
+				<header class="hidden">
+					<div class="row">
+						<div id="inicio-formulario" class="col-md-12 hst-page-title mdl-shadow--4dp text-center">
+							<input type="hidden" id="baseUrl" value="/patpub" />
+							<span>Pide tu Pr&eacute;stamo de Libre Disponibilidad</span>
+						</div>
+					</div>
+				</header>
+			</div>
+			<div class="container-fluid">
+			
+				<!-- Secci&oacute;n 01 (Perfilador)-->
+				<div class="row hst-seccion" id="seccion-01">
+					<div class="col-md-12 hst-no-padding">
+						
+							
+							
+								
+<div class="container-fluid hst-for-close">
+<div class="hst-closed"></div>
+
+	<div class="row">
+		<div  id="contenedor-form-inicial" class="col-xs-12">
+			<div id="scroll-tittle" class="container-fluid hst-center-attention">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 hst-no-padding top-leyenda-pld">	
+						<img src="https://www.bbva.pe/content/dam/public-web/peru/ab-test/ico-estrella-ab.png"> Descubre el mejor producto para tí
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 hst-form mdl-shadow--2dp formulario-inicial">
+<!-- 					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12 hst-form mdl-shadow--2dp formulario-inicial"> -->
+						<div class="container-fluid ">
+							<div class="row hst-form">
+								<div class="col-md-6 col-sm-6">
+									<!-- Select with arrow-->
+									
+										<div id="select-tipo-documento" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height hst-select-mod is-focused">
+											<input class="mdl-textfield__input" type="text" id="tipoDoc" value="DNI" data-val="DNI" tabIndex="0" readonly> <label for="tipoDoc" class="mdl-textfield__label">Tipo documento</label>
+											<label for="tipoDoc" style="float:right;" >
+								                <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+								            </label>
+											<ul for="tipoDoc" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+												
+													<li class="mdl-menu__item" data-val="DNI">DNI</li>
+											    
+													<li class="mdl-menu__item" data-val="EXT">CE</li>
+											    
+											</ul>
+										</div>
+									
+								</div>
+								
+								<div class="col-md-6 col-sm-6 content-spin-load-document">
+									<img class="spin-load-document hidden" src="patpubST/own/img/ajaxload.gif">
+									<!-- Numeric Textfield with Floating Label -->
+									
+										<div id="inputNumDocDni" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											<div class="mdl-textfield-validation">
+												<input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" onchange="encenderValidacionDocumentoDNI();" id="numDocDni"> 
+												<img id="checkDni" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
+											</div>
+											<label class="mdl-textfield__label" for="numDocDni">Documento</label>
+											<span class="mdl-textfield__error">Ingresar un documento v&aacute;lido.</span>
+										</div>
+									
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<!-- Numeric Textfield with Floating Label -->
+									
+										<div id="inputNumDocOtro" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label hidden">
+											<div class="mdl-textfield-validation">
+												<input class="mdl-textfield__input" type="text" onchange="encenderValidacionDocumento();" id="numDocOtro">
+												<img id="checkDoc" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
+											</div>
+											<label class="mdl-textfield__label" for="numDocOtro">Documento</label> 
+											<span class="mdl-textfield__error">Ingresar un documento v&aacute;lido.</span>
+										</div>
+									
+								</div>
+								<div class="col-md-12 col-sm-12"></div>
+								<div class="col-md-6 col-sm-6">
+									<!-- Textfield with Floating Label -->
+									
+										<div id="inputCelOblig" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											<div class="mdl-textfield-validation">
+												<input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" onchange="encenderValidacionCelular();" id="celularObligatorio">
+												<img id="checkCel" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
+											</div>
+											<label class="mdl-textfield__label" for="celularObligatorio">Celular</label> <span class="mdl-textfield__error">Ingrese un celular v&aacute;lido.</span>
+										</div>
+									
+								</div>
+								<div class="correo-pld col-md-6 col-sm-6">
+									<!-- Textfield with Floating Label -->
+									
+										<div id="inputEmail" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											
+											<div class="mdl-textfield-validation">
+												<input class="mdl-textfield__input" type="text" id="email" onchange="encenderValidacionEmail();" autocomplete="off" maxlength="34"> 
+												<img id="checkEmail" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
+											</div>
+											<label class="mdl-textfield__label" for="email">Correo electr&oacute;nico</label> <span class="mdl-textfield__error">Ingrese un correo electr&oacute;nico v&aacute;lido.</span>
+										</div>
+									
+								</div>
+								
+								<div class="col-md-12 col-sm-12"></div>
+
+								<div class="col-md-6 col-sm-6">
+									<!-- Select with arrow-->
+									
+										<div id="select-depa" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height hst-select-mod is-focused">
+											<input class="mdl-textfield__input" type="text" id="depa" value="LIMA" data-val="DNI" tabIndex="0" readonly> <label for="depa" class="mdl-textfield__label">Departamento</label>
+											<label for="depa" style="float:right;" >
+								                <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+								            </label>
+											<ul for="depa" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+												
+													<li class="mdl-menu__item" data-val="15">LIMA</li>
+													<li class="mdl-menu__item" data-val="16">AYACUCHO</li>
+											    
+											</ul>
+										</div>
+									
+								</div>
+								
+								<div class="col-md-6 col-sm-6">
+									<!-- Select with arrow-->
+									
+										<div id="select-prov" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height hst-select-mod">
+											<input class="mdl-textfield__input" type="text" id="prov" value="LIMA" data-val="DNI" tabIndex="0" readonly> <label for="prov" class="mdl-textfield__label">Provincia</label>
+											<label for="prov" style="float:right;" >
+								                <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+								            </label>
+											<ul for="prov" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+												
+													<li class="mdl-menu__item" data-val="01">LIMA</li>
+											    
+													<li class="mdl-menu__item" data-val="02">YAUYOS</li>
+											    
+											</ul>
+										</div>
+									
+								</div>								
+
+								<div class="col-md-12 col-sm-12"></div>
+
+
+								<div class="col-md-6 col-sm-6">
+									<!-- Select with arrow-->
+									
+										<div id="select-dist" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height hst-select-mod">
+											<input class="mdl-textfield__input" type="text" id="dist" value="SAN LUIS" data-val="DNI" tabIndex="0" readonly> <label for="dist" class="mdl-textfield__label">Distrito</label>
+											<label for="dist" style="float:right;" >
+								                <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+								            </label>
+											<ul for="dist" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+												
+													<li class="mdl-menu__item" data-val="18">SAN LUIS</li>
+											    
+													<li class="mdl-menu__item" data-val="12">SURCO</li>
+											    
+											</ul>
+										</div>
+									
+								</div>									
+								<div class="correo-pld col-md-6 col-sm-6">
+									<!-- Textfield with Floating Label -->
+									
+										<div id="inputUserTwitter" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											
+											<div class="mdl-textfield-validation">
+												<input class="mdl-textfield__input" type="text" id="userTwitter" onchange="encenderValidacionUserTwitter();" autocomplete="off" maxlength="34"> 
+												<img id="checkUserTwitter" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
+											</div>
+											<label class="mdl-textfield__label" for="userTwitter">Usuario de Twitter</label> <span class="mdl-textfield__error">Ingrese un usuario de Twitter valido.</span>
+										</div>
+									
+								</div>								
+								
+								<div class="col-md-12 col-sm-12"></div>
+
+								<div class="col-md-6 col-sm-6">
+									<!-- Select with arrow-->
+									
+										<div id="select-sitlab" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height hst-select-mod">
+											<input class="mdl-textfield__input" type="text" id="sitlab" value="Estable/Fijo" data-val="DNI" tabIndex="0" readonly> <label for="sitlab" class="mdl-textfield__label">Situaci&oacute;n Laboral</label>
+											<label for="sitlab" style="float:right;" >
+								                <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+								            </label>
+											<ul for="sitlab" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+													<li class="mdl-menu__item" data-val="01">Estable/Fijo</li>
+													<li class="mdl-menu__item" data-val="01">A plazo</li>
+													<li class="mdl-menu__item" data-val="02">Eventual</li>
+													<li class="mdl-menu__item" data-val="03">Independiente</li>
+													<li class="mdl-menu__item" data-val="04">Otros</li>
+											    
+											</ul>
+										</div>
+									
+								</div>	
+
+								<div class="col-md-6 col-sm-6">
+									<!-- Select with arrow-->
+									
+										<div id="select-vivenda" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height hst-select-mod">
+											<input class="mdl-textfield__input" type="text" id="vivienda" value="Propia" data-val="DNI" tabIndex="0" readonly> <label for="vivienda" class="mdl-textfield__label">Tipo de Vivienda</label>
+											<label for="vivienda" style="float:right;" >
+								                <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+								            </label>
+											<ul for="vivienda" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+													<li class="mdl-menu__item" data-val="01">Propia</li>
+													<li class="mdl-menu__item" data-val="02">Alquilada</li>
+													<li class="mdl-menu__item" data-val="03">Hipotecada</li>
+													<li class="mdl-menu__item" data-val="04">Familiar</li>
+											    
+											</ul>
+										</div>
+									
+								</div>	
+
+								
+								<div class="col-md-12 col-sm-12"></div>
+								<div class="correo-pld col-md-6 col-sm-6">
+									<!-- Textfield with Floating Label -->
+									
+										<div id="inputFecNac" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+											
+											<div class="mdl-textfield-validation">
+												<input class="mdl-textfield__input" type="text" id="fecnac" onchange="encenderValidacionFecNac();" autocomplete="off" maxlength="34"> 
+												<img id="checkFecNac" class="mdl-check check-png hidden" src="patpubST/own/img/icons/check1.png">
+											</div>
+											<label class="mdl-textfield__label" for="fecnac">Fecha de Nacimiento</label> <span class="mdl-textfield__error">Ingrese una fecha de nacimiento válida</span>
+										</div>
+									
+								</div>									
+								
+								<div class="col-md-12 col-sm-12"></div>
+								
+
+
+								<div class="col-md-12 col-sm-12 form-inicial-visualiza checkox-patpub">
+									<div class="row">
+										<div class="col-sm-1 col-sm-offset-2 col-xs-1">
+												<label style="position:absolute" for="chkboxTDP" 
+													class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect ">
+													<input type="checkbox" id="chkboxTDP"
+													class="mdl-checkbox__input">
+												</label> 
+										</div>
+										<div class="col-sm-9 col-xs-10 padding-left-0">
+											<span class="mdl-checkbox__label text-bold">He le&iacute;do y autorizo
+												el <u id="label-tdp">Tratamiento de datos personales</u>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4  text-center hst-btn-form">
+								<input type="hidden" id="motivo" />
+									<!-- Accent-colored raised button with ripple -->
+									<button id="empecemos" class="bt btn-BBVA-azul">
+										&iexcl;Empecemos&#33;
+									</button>
+								</div>
+							</div>
+							
+
+							
+							<div class="row">
+								<div class="col-md-4 col-sm-4"></div>
+								<div class="col-md-4 col-sm-4 col-xs-12 text-center hst-loading-form">
+									<img class="paso-01-gif hidden" src="patpubST/own/img/ajaxload.gif">
+								</div>
+								<div class="col-md-4 col-sm-4"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+   
+							
+						
+					</div>
+				</div>
+				
+
+
+			</div>
+		</div>
+
+		
+<div id="divFooter" style="display: none">
+
+	</div>
+	
+	
+	
+	<script async defer type="text/javascript" src="patpubST/own/js/footer.js?d=1618413479369"></script>	
+		<!-- Script Resize - Inicio -->
+		<script type="text/javascript" src="https://www.bbvacontinental.pe/etc/designs/bbva/pwebs/clientlibs/iframe/iframe-resizer-contentwindow.js"></script>
+		<!-- Script Resize - Fin  -->
+		
+
+
+<script type="text/javascript" src="patpubST/own/js/constants.js"></script>
+
+<!-- JQuery -->
+<script type="text/javascript" src="patpubST/libraries/jquery/3.2.1/jquery-3.2.1.min.js"></script>
+
+<!-- JQuery Mask -->
+<script type="text/javascript" src="patpubST/libraries/jquery/mask/jquery.mask.min.js"></script>
+
+<!-- JQuery InputMask -->
+<script type="text/javascript" src="patpubST/libraries/jquery/inputmask/jquery.inputmask.min.js"></script>
+
+<!-- ScrollTo -->
+<script async defer type="text/javascript" src="patpubST/libraries/jquery/scrollto/jquery.scrollTo.min.js"></script>
+
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="patpubST/libraries/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Booststrap Select -->
+<script async type="text/javascript" src="patpubST/libraries/bootstrap/select/js/bootstrap-select.min.js"></script>
+
+
+<!-- Material Design Lite -->
+<script type="text/javascript" src="patpubST/libraries/material-design/lite/js/material.min.js"></script>
+<script async type="text/javascript" src="patpubST/libraries/material-design/select-mdl/js/getmdl-select.min.js"></script>
+
+<script src="patpubST/libraries/jquery/Select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+<!-- JQuery AlphaNum -->
+<script type="text/javascript" src="patpubST/libraries/jquery/alphanum/jquery.alphanum.min.js"></script>
+
+<!-- Datetimepicker -->
+<script type="text/javascript" src="patpubST/libraries/bootstrap/bootstrap-datetimepicker/js/moment-with-locales.js"></script>
+<script type="text/javascript" src="patpubST/libraries/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+
+
+<!-- Flip -->
+	<script async defer type="text/javascript" src="patpubST/libraries/jquery/flit/jquery.flip.min.js"></script>
+<!-- /Flip -->
+
+
+<!-- Own -->
+<script type="text/javascript" src="patpubST/own/js/visual.js"></script>
+<script type="text/javascript" src="patpubST/own/js/patpub_crit.js"></script>
+<script async defer type="text/javascript" src="patpubST/own/js/patpub.js"></script>
+
+
+
+
+<script type="text/javascript" src="patpubST/own/js/datalayer.js"></script>
+<script type="text/javascript" src="patpubST/own/js/datalayer_funciones.js"></script>
+<script type="text/javascript" src="patpubST/own/js/datalayer_patpub.js"></script>
+
+
+
+
+	<script async defer src="https://www.google.com/recaptcha/api.js?hl=es-419"></script>
+
+
+		<script type="text/javascript">
+			if (window.location.host === 'prestamos.bbva.pe') {
+				var h1 = document.createElement('h1');
+				if (window.location.pathname === '/prestamos-personales') {
+					h1.textContent = 'Descubre si tienes un préstamo personal online BBVA';
+				}else if (window.location.pathname === '/credito-vehicular') {
+					h1.textContent = 'Quiero solicitar un crédito vehicular para...';
+				}else if (window.location.pathname === '/credito-estudiantil') {
+					h1.textContent = 'Descubre si tienes un crédito estudiantil BBVA online';
+				}
+				document.body.prepend(h1);
+				h1.style.display = 'none';
+			}
+
+			//llamar a api:
+			$("#empecemos").on("click",function(){
+				alert("hola mundo");
+			});
+
+
+
+
+		</script>
+		<script type="text/javascript" src="https://api.ipify.org/?format=jsonp&callback=get_ip"></script>
+	</body>
+</html>
